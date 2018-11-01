@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 8765 
+  
+eureka:
+  client:
+    eureka-server-port: 8761
+    fetch-registry: true
+    
+# The OAuth2 server definition that would be used to send the authorization requests to
+authserver:
+    hostname: localhost
+    port: 8899
+    contextPath: userauth
+    
+zuul:
+  routes:
+    ignoredServices: '*'
+    account:
+      path : /account/api/v1/accounts/**
+      stripPrefix: false
+      serviceId : accounts-webservice
+    order:
+      path : /order/api/v1/orders/**
+      stripPrefix: false
+      serviceId : orders-webservice
+    user:
+      path: /api/loggedinuser/**
+      stripPrefix: true
+      url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/
+    ui:
+      path: /**
+      stripPrefix: false
+      serviceId: online-shopping-webservice
+      
+
+logging:
+  level:
+    org:
+      springframework:
+      security: DEBUG
+    

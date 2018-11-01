@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: auth-server
+  security:
+    user:
+      password: password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect    
+    show-sql: true
+    hibernate:            
+      use-new-id-generator-mappings: false
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://localhost:3306/orders?useSSL=false
+    username: anup
+    password: anup
+    driver-class-name: com.mysql.jdbc.Driver
+      
+
+         
+# We need to setup different context root for the auth server so that we can store 
+# separate cookies for both the API gateway as well as the 
+# OAuth2 authorization server.
+server:
+  port: 8899
+  servlet:
+    context-path: /userauth
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+

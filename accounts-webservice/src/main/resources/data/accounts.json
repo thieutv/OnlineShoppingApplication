@@ -1,0 +1,80 @@
+{
+     "firstName": "Anup",
+     "lastName": "Jawanjal",
+	 "emailId" : "anup2jawanjal@gmail.com",
+     "age": 25,
+     "address":
+     {
+         "building" : "C-303 Geetganga Society",
+		 "area": "Aundh",
+		 "landmark": "Near Medipoint Hospital",
+         "city": "Pune",
+         "state": "MH",
+         "postalCode": "411007"
+     },
+     "mobileNumber": "8275419057"     
+}
+{
+     "firstName": "Saurabh",
+     "lastName": "Bodhe",
+	 "emailId" : "sdb11313@gmail.com",
+     "age": 45,
+     "address":
+     {
+         "building" : "4445 Laxmisadan",
+		 "area": "Baner",
+		 "landmark": "Behind D mart",
+         "city": "Pune",
+         "state": "MH",
+         "postalCode": "411006"
+     },
+     "mobileNumber": "997078234567"     
+}
+{
+     "firstName": "Vishal",
+     "lastName": "Sikka",
+	 "emailId" : "vidcoolbro@gmail.com",
+     "age": 60,
+     "address":
+     {
+         "building" : "344 Nexsus Society",
+		 "area": "Banergatta",
+		 "landmark": "near keli market",
+         "city": "Hyderabad",
+         "state": "TL",
+         "postalCode": "929200"
+     },
+     "mobileNumber": "943254343343"     
+}
+{
+     "firstName": "Neha",
+     "lastName": "Bansod",
+	 "emailId" : "nehaisneha@gmail.com",
+     "age": 26,
+     "address":
+     {
+         "building" : "Empire State Street",
+		 "area": "Chaprashipura",
+		 "landmark": "near d mart",
+         "city": "Amravati",
+         "state": "MH",
+         "postalCode": "444604"
+     },
+     "mobileNumber": "945455333343"     
+}
+{
+     "firstName": "Shustri",
+     "lastName": "Kale",
+	 "emailId" : "sh2345@gmail.com",
+     "age": 26,
+     "address":
+     {
+         "building" : "Javahar Street",
+		 "area": "gandhi market",
+		 "landmark": "near statue of gandhi",
+         "city": "Baroda",
+         "state": "GJ",
+         "postalCode": "3332333"
+     },
+     "mobileNumber": "922492422000"     
+}

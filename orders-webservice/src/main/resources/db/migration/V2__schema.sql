@@ -1,0 +1,1 @@
+alter table orders add constraint UK_isib73cf1hyvi8v1sr35upc6w unique (account_email_id);
